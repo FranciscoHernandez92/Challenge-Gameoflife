@@ -1,0 +1,14 @@
+{
+  "name": "challenge-game-of-life",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "prettier":{"singleQuote": true},
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [],
+  "author": "ElChiquillo",
+  "license": "ISC"
+}
