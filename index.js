@@ -1,2 +1,4 @@
-import { game } from './functions.js';
-setInterval(game, 1000);
+import { game, currentBoard } from './functions.js';
+setInterval(() => {
+  currentBoard = game(currentBoard);
+}, 1000);
