@@ -1,40 +1,30 @@
-import { game } from './functions.js';
+import { game, aliveCells } from './functions.js';
 
-describe('game', () => {
-  test('should be ... when argument is ...', () => {
+describe('aliveCells', () => {
+  test('should count alive cells correctly', () => {
     //Arrange
-    const x = ...;
-    const expected =...;
+    const x = [
+      [1, 0, 1],
+      [0, 1, 1],
+      [0, 0, 1],
+    ];
+    const expected = 4;
     //Act
-    const r = game();
+    const r = liveCells(x, 1, 1);
     //Assert
     expect(r).toBe(expected);
   });
-    test('should be ... when argument is ...', () => {
+  test('should count alive cells correctly', () => {
     //Arrange
-    const x = ...;
-    const expected =...;
+    const x = [
+      [0, 0, 0],
+      [0, 1, 0],
+      [0, 0, 0],
+    ];
+    const expected = 0;
     //Act
-    const r = game();
+    const r = liveCells(x, 1, 1);
     //Assert
     expect(r).toBe(expected);
   });
-    test('should be ... when argument is ...', () => {
-    //Arrange
-    const x = ...;
-    const expected =...;
-    //Act
-    const r = game();
-    //Assert
-    expect(r).toBe(expected);
-  });
-    test('should be ... when argument is ...', () => {
-    //Arrange
-    const x = ...;
-    const expected =...;
-    //Act
-    const r = game();
-    //Assert
-    expect(r).toBe(expected);
-  });
-})
+});
